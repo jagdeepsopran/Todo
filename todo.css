@@ -1,0 +1,51 @@
+:root{
+    --mainColor: #24096e;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background: var(--mainColor);
+    margin-top:30px ;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background: #ffffff;
+    padding:15px;
+    border-radius: 5px;
+}
+#addTaskBtn, #input, #deleteall{
+    padding: 5px 10px;
+    outline: none;
+    border:3px solid  var(--mainColor);
+    border-radius: 5px;
+    margin: 5px;
+}
+
+#addTaskBtn{
+    margin: 10px 15px;
+    background: #ffffff;
+    border-radius: 5px;
+}
+
+#taskList li{
+    color: white;
+    list-style-type: none;
+    padding: 8px 30px;
+    background: var(--mainColor);
+    position:relative;
+    /* border-bottom: 2px solid #ffffff; */
+}
+#taskList li i{
+    position: absolute;
+    right: 15px;
+}
